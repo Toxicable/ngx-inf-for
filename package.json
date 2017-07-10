@@ -33,6 +33,7 @@
     "integration:jit": "cd integration && npm run e2e",
     "integration:aot": "cd integration && npm run e2e:aot",
     "lint": "tslint ./src/**/*.ts -t verbose",
+    "release:dry": "standard-version --dry-run",
     "release": "standard-version"
   },
   "peerDependencies": {
