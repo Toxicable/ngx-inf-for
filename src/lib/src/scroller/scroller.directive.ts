@@ -70,19 +70,30 @@ export class InfForOf<T> implements DoCheck, OnChanges {
       root: <any>null,
       rootMargin: '0px',
       threshold: this.threshold
-    }
-    this._observer = new IntersectionObserver(this.observerEmit.bind(this), options);
+    };
+    this._observer = new IntersectionObserver(this._observerEmit.bind(this), options);
   }
 
-  private clearObservers() {
-    this._observer.takeRecords().forEach(item => this._observer.unobserve(item.target))
+  private _clearObservers(items?: IntersectionObserverEntry[]) {
+    items = items ? items : this._observer.takeRecords();
+    items.forEach(item => {
+      this._observer.unobserve(item.target);
+    });
   }
 
-  private observerEmit(changes: IntersectionObserverEntry[]) {
+  private _observeItem(view: EmbeddedViewRef<NgForOfContext<T>>) {
+    view.rootNodes
+      .filter(node => node instanceof HTMLElement)
+      .forEach(el => {
+        this._observer.observe(el);
+      });
+  }
+
+  private _observerEmit(changes: IntersectionObserverEntry[]) {
     // since the IntersectionObserver emits when you call this.observer.observe(item) we check
     // to make sure it's actually intersecting
     if (this.shouldEmit && (<any>changes[0]).isIntersecting) {
-      this.clearObservers();
+      this._clearObservers(changes);
 
       // IntersectionObserver isn't patched by zone
       this.ngZone.run(() => this.load.emit());
@@ -134,12 +145,6 @@ export class InfForOf<T> implements DoCheck, OnChanges {
 
     // this dosen't support text nodes
     this._observeItem(<EmbeddedViewRef<NgForOfContext<T>>>this._viewContainer.get(this._viewContainer.length - 1));
-  }
-
-  private _observeItem(view: EmbeddedViewRef<NgForOfContext<T>>) {
-    view.rootNodes
-      .filter(node => node instanceof HTMLElement)
-      .forEach(el => this._observer.observe(el));
   }
 
   private _applyRemove(index: number) {
