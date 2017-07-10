@@ -2,7 +2,7 @@
 For Angular
 
 ```shell
-npm install toxic-infinite-scroller intersection-observer
+npm install --save toxic-infinite-scroller intersection-observer
 ```
 ```js
 import { ToxicInfiniteScrollerModule } from 'toxic-infinite-scroller';
