@@ -1,2 +1,2 @@
-export { InfForOf } from './src/scroller/scroller.directive';
-export { InfiniteScrollerModule } from './src/module';
+export { InfForOf } from './src/scroller/inf-for-of.directive';
+export { InfiniteForModule } from './src/module';
