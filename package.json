@@ -1,6 +1,6 @@
 {
   "name": "toxic-infinite-scroller",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Library QuickStart package.json from the documentation, supplemented with testing support",
   "main": "./bundles/toxic-infinite-scroller.umd.js",
   "module": "./toxic-infinite-scroller.es5.js",

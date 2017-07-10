@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.4"></a>
+## 1.0.4 (2017-07-10)
+
+
+### Bug Fixes
+
+* **core:** unobserve items correctly ([31aad55](https://github.com/Toxicable/toxic-infinite-scoller/commit/31aad55))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/Toxicable/toxic-infinite-scoller/compare/v1.0.2...v1.0.3) (2017-07-10)
 
