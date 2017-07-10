@@ -3,7 +3,7 @@
     "baseDir": "src/demo",
     "routes": {
       "/node_modules": "node_modules",
-      "/toxic-infinite-scroller": "src/lib"
+      "/ngx-inf-for": "src/lib"
     }
   }
 }

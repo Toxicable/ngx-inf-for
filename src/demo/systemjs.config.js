@@ -39,7 +39,7 @@
       rxjs: {
         defaultExtension: 'js'
       },
-      'toxic-infinite-scroller': {
+      'ngx-inf-for': {
         main: 'index.js',
         defaultExtension: 'js',
         meta: {

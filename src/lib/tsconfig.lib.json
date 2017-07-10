@@ -15,8 +15,8 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
-    "flatModuleOutFile": "toxic-infinite-scroller.js",
-    "flatModuleId": "toxic-infinite-scroller",
+    "flatModuleOutFile": "ngx-inf-for.js",
+    "flatModuleId": "ngx-inf-for",
     "genDir": "../../out-tsc/lib-gen-dir/"
   }
 }

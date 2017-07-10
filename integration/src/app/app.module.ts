@@ -1,6 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ToxicInfiniteScrollerModule } from 'toxic-infinite-scroller';
+import { ToxicInfiniteScrollerModule } from 'ngx-inf-for';
 
 import { AppComponent }  from './app.component';
 

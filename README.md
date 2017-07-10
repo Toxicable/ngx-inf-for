@@ -1,11 +1,10 @@
-# Toxic Infinite Scroller 
-For Angular
+# Angular Infinite Scroller 
 
 ```shell
-npm install toxic-infinite-scroller intersection-observer
+npm install ngx-inf-for intersection-observer
 ```
 ```js
-import { ToxicInfiniteScrollerModule } from 'toxic-infinite-scroller';
+import { InfiniteScrollerModule } from 'ngx-inf-for';
 import 'intersection-observer';
 
 @NgModule({

@@ -5,4 +5,4 @@ import { InfForOf } from './scroller/scroller.directive';
   declarations: [InfForOf],
   exports: [InfForOf]
 })
-export class ToxicInfiniteScrollerModule { }
+export class InfiniteScrollerModule { }

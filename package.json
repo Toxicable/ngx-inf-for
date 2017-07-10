@@ -1,12 +1,11 @@
 {
-  "name": "toxic-infinite-scroller",
+  "name": "ngx-inf-for",
   "version": "1.0.3",
-  "description": "Library QuickStart package.json from the documentation, supplemented with testing support",
-  "main": "./bundles/toxic-infinite-scroller.umd.js",
-  "module": "./toxic-infinite-scroller.es5.js",
-  "es2015": "./toxic-infinite-scroller.js",
-  "typings": "./toxic-infinite-scroller.d.ts",
-  "author": "",
+  "main": "./bundles/ngx-inf-for.umd.js",
+  "module": "./ngx-inf-for.es5.js",
+  "es2015": "./ngx-inf-for.js",
+  "typings": "./ngx-inf-for.d.ts",
+  "author": "Fabian Wiles (Toxicable)",
   "license": "MIT",
   "repository": {},
   "engines": {
