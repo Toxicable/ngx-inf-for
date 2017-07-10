@@ -1,6 +1,6 @@
 {
   "name": "toxic-infinite-scroller",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Library QuickStart package.json from the documentation, supplemented with testing support",
   "main": "./bundles/toxic-infinite-scroller.umd.js",
   "module": "./toxic-infinite-scroller.es5.js",
@@ -34,7 +34,7 @@
     "integration:aot": "cd integration && npm run e2e:aot",
     "lint": "tslint ./src/**/*.ts -t verbose",
     "release:dry": "standard-version --dry-run",
-    "release": "standard-version && npm publish dist"
+    "release": "standard-version && npm run build && npm publish dist"
   },
   "peerDependencies": {
     "@angular/core": ">=4.0.0 <5.0.0 || >=4.0.0-beta <5.0.0",
