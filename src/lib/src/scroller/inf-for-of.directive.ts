@@ -66,7 +66,7 @@ export class InfForOf<T> implements DoCheck, OnChanges {
   }
 
   @Input()
-  set ngForTemplate(value: TemplateRef<NgForOfContext<T>>) {
+  set infForTemplate(value: TemplateRef<NgForOfContext<T>>) {
     if (value) {
       this._template = value;
     }
@@ -101,11 +101,13 @@ export class InfForOf<T> implements DoCheck, OnChanges {
   }
 
   private _observeItem(view: EmbeddedViewRef<NgForOfContext<T>>) {
+    if (view){
     view.rootNodes
       .filter(node => node instanceof HTMLElement)
       .forEach(el => {
         this._observer.observe(el);
       });
+    }
   }
 
   private _observerEmit(changes: IntersectionObserverEntry[]) {
