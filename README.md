@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Toxicable/ngx-inf-for.svg?branch=master)](https://travis-ci.org/Toxicable/ngx-inf-for)
+
 # Angular Infinite Scroller 
 
 ```shell
