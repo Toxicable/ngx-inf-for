@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/Toxicable/toxic-infinite-scoller/compare/v1.0.5...v1.1.0) (2017-07-16)
+
+
+### Bug Fixes
+
+* **build:** disable intergration on travis ([0d39a20](https://github.com/Toxicable/toxic-infinite-scoller/commit/0d39a20))
+
+
+### Features
+
+* **build:** added unit tests for the ngFor implimentation ([553ee57](https://github.com/Toxicable/toxic-infinite-scoller/commit/553ee57))
+
+
+
 <a name="1.0.5"></a>
 ## [1.0.5](https://github.com/Toxicable/toxic-infinite-scoller/compare/v1.0.4...v1.0.5) (2017-07-10)
 
