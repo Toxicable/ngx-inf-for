@@ -101,19 +101,19 @@ export class InfForOf<T> implements DoCheck, OnChanges {
   }
 
   private _observeItem(view: EmbeddedViewRef<NgForOfContext<T>>) {
-    if (view){
-    view.rootNodes
-      .filter(node => node instanceof HTMLElement)
-      .forEach(el => {
-        this._observer.observe(el);
-      });
+    if (view) {
+      view.rootNodes
+        .filter(node => node instanceof HTMLElement)
+        .forEach(el => {
+          this._observer.observe(el);
+        });
     }
   }
 
   private _observerEmit(changes: IntersectionObserverEntry[]) {
     // since the IntersectionObserver emits when you call this.observer.observe(item) we check
     // to make sure it's actually intersecting
-    if (this.disabled && (<any>changes[0]).isIntersecting) {
+    if (!this.disabled && (<any>changes[0]).isIntersecting) {
       this._clearObservations(changes);
 
       // IntersectionObserver isn't patched by zone
