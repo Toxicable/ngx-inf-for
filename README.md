@@ -17,7 +17,7 @@ Since this lib makes heavy use of IntersectionObserver you will need to import t
 
 ```html
 <ng-template (infFor)="loadMore()" [infForOf]="items" let-item [infForTrackBy]="trackById">
-  <div>{{item}}</div>
+  <div>{{item | json}}</div>
 <ng-template>
 ```
 Since [Angular does not support `@Output` binding in structual directives sugar syntax](https://github.com/angular/angular/issues/12121) we have to use it the more verbose syntax
@@ -26,7 +26,7 @@ Please note that you must have an HTML element inside your `<ng-template>` tags.
 
 ```html
 <ng-template (infFor)="loadMore()" [infForOf]="items" let-item>
-  {{item}}
+  {{item | json}}
 <ng-template>
 ```
 
