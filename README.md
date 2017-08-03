@@ -31,5 +31,5 @@ Please note that you must have an HTML element inside your `<ng-template>` tags.
 ```
 
 # Demo
-Basic: https://plnkr.co/edit/uUytxT3oAJmxEcd2IKLi?p=preview
+Basic: https://plnkr.co/edit/uUytxT3oAJmxEcd2IKLi?p=preview  
 Full:  https://plnkr.co/edit/5fEYa1R35FSpO3IWHxyE?p=preview
